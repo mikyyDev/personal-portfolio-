@@ -1,3 +1,9 @@
+import { Navbar } from "./components/Navbar";
+
 export default function App() {
-  return <h1 className="text-3xl font-bold">Michael Alula</h1>;
+  return (
+    <div className="min-h-screen bg-white text-neutral-900 dark:bg-[#161513] dark:text-white transition-colors duration-300">
+      <Navbar />
+    </div>
+  );
 }
