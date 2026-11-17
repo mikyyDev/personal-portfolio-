@@ -9,9 +9,10 @@ export function useTheme() {
       if (stored === "light" || stored === "dark") {
         return stored;
       }
-      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      // Always default to dark mode on first visit
+      return "dark";
     }
-    return "light";
+    return "dark";
   });
 
   useEffect(() => {
@@ -30,4 +31,3 @@ export function useTheme() {
 
   return { theme, setTheme, toggleTheme };
 }
-

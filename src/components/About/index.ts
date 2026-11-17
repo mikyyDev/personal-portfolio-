@@ -1,0 +1,10 @@
+export { About, default } from "./About";
+export { AboutHeader } from "./AboutHeader";
+export { AboutStory } from "./AboutStory";
+export { AboutLookingFor } from "./AboutLookingFor";
+export { AboutQuickFacts } from "./AboutQuickFacts";
+export { AboutHumanTouch } from "./AboutHumanTouch";
+export { AboutArchitectureCard } from "./AboutArchitectureCard";
+export { AboutActions } from "./AboutActions";
+export { aboutData } from "./aboutData";
+export type * from "./types";
